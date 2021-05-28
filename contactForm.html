@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>										
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport visible area webpage -->
+		  <!-- fonts imported from google -->
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Roboto:ital@1&display=swap" rel="stylesheet">          
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!-- icons imported fontawesome -->
+		<title>A Slice of Plymouth History</title>
+		<link href="style.css" rel="stylesheet"/>	<!-- css file -->
+		<script src="javascript.js"></script>		<!-- javascript file -->
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	</head>
+	<body>		<!-- cookies checked at opening page -->
+		<div class="header">
+			<div class="title">
+				<a href="index.html" ><span class="italicStyle">"A Slice of Plymouth History"</span></a>
+			</div>
+			<div class="searchBoxWrapper">			<!-- Container Searchbox -->
+				<div class="searchBox">
+					<div class="searchContainer">
+						<form class="searchContainer" action="https://www.google.com/search" method="GET">
+						<input class="search" alt="search" name="q" type="text" placeholder="Google Search" >
+						<button class="searchIcon" type="submit" ><i class="icon-search "></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div  class="quote">"All great and honorable actions are accompanied with great difficulties, and must be both met and overcome with answerable courage" - William Bradford </div>
+		</div>
+		<div class="body">
+			<div class="row">
+				<div class="navigator">						<!-- Menu navigator -->
+					<div class="titleMenu boldStyle">Menu</div>
+					<div class="menuContent">
+						<ul class="menuList">
+							<li class="menuItem hyperlink"><a href="index.html">HomePage</a></li>
+							<li class="menuItem hyperlink"><a href="museum.html">Museums </a></li>
+							<li class="menuItem hyperlink"><a href="plymouthHoe.html">Plymouth Hoe</a></li>
+							<li class="menuItem hyperlink"><a href="theatre.html"> Theatre </a></li>
+							<li class="menuItem hyperlink"><a href="map.html">Map</a></li>
+							<li class="menuItem hyperlink"><a href="shopping.php">Shopping </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents index">			<!-- Main contents -->
+					<div class="titleContents boldStyle"> Fill your form here:
+					</div>
+					    <div class="formContact">
+                    		<form >						<!-- form to fill all field required -->
+								<div class="textContent  ">
+									Full Name :
+									<input class="shipInfo" required alt="Full Name" type="text" placeholder=" example: Jim Brown" id="fnameForm" name="fnameForm" >
+								</div>
+								<div class="textContent  ">
+									Email : 
+									<input class="shipInfo" required alt="Email" type="text" placeholder=" example: cust@gmail.uk.ac" id="emailForm" name="emailForm"  >
+								</div>
+								<div class="textContent  ">
+									Address : 
+									<input class="shipInfo" required alt="Address" type="text" placeholder=" example: address, PostCode, State" id="addressForm" name="addressForm" >
+								</div>
+								<div class="textContent  ">
+									Mobile Number : 
+									<input class="shipInfo" required alt="mobile number" name="mobileForm" placeholder=" example: 012342356" type=" text" id="mobileForm" >
+                                                 
+								</div>
+                                <div class="textContent  ">
+								    Type your questions : 
+									<input class="formContainer shipInfo "  alt="form container" name="textForm" id="textForm" placeholder="  text here.." type="text" id="formForm" required style="height: 150px"  >
+                                </div>
+                               
+											
+							</form>
+                         <div>
+                                    <input class="boldStyle" type="submit" value="Send" onclick=" ValidateName(fnameForm); ValidateEmail(emailForm); ValidateAddress(addressForm); ValidateNumber(mobileForm); ValidateForm(textForm); ConfirmForm(5);">			<!-- these funcions will check if the form is correctly field -->
+                                </div>								<!-- ConfirmForm will show the next window if the form correctly field -->									<!-- 5 = referenceWindow (myModal 5) -->
+
+                            <div>
+                           <div id="myModal5" class="modal myModal5">
+									  <!-- Modal content -->
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="titleContents boldStyle"> Form Completed
+										<span class="close" > <a href="index.html" >&times; </a></span>
+									</div>						
+									
+								</div>
+												  
+								<div class="modal-body"> Thank you for your enquiry
+								</div>
+								<div class="modal-footer">				
+									<button class="buttonHomePage boldStyle spaceTB alignCenter"><a href="index.html" > Back to the HomePage </a></button>			<!-- Redirect to Home Page -->
+								</div>
+							</div>
+                            </div>
+						</div>
+					    </div>
+                    </div>
+				</div>
+			</div>
+
+			<div class="row row--spaceBetween">					<!-- bottom contacts, social and info -->
+				<div class="contactWrapper">
+					<div class="titleMenuBottom boldStyle">Contacts:</div>
+					<div class="fullContactWrapper">
+						<div class="joinRow">	
+							<div class="typeContact boldStyle">Email:</div>
+							<div class="dataContatct">10787166@cityplym.ac.uk</div>
+						</div>
+						<div class="joinRow">	
+							<div class="typeContact boldStyle">Address:</div>
+							<div class="dataContatct">Drake Circus, Plymouth, PL4 88A</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact boldStyle">Company:</div>
+							<div class="dataContatct">University of Plymouth &#169;</div>
+						</div>
+					</div>
+				</div>
+				<div class="socialWrapper">
+					<div class="titleMenuBottom boldStyle">Social:</div>
+					<div class="fullContactWrapper">
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://instagram.com"><i class="icon-instagram"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://instagram.com">Instagram</a>
+							</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://facebook.com"> <i class="icon-facebook"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://facebook.com">Facebook</a>
+							</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://twitter.com"><i class="icon-twitter"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://twitter.com">Twitter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">					<!-- footer links -->
+			<a class="hyperlink" href="sitemap.html" > <b>Sitemap</b> </a>
+			<a class="hyperlink" href="cookies.html" ><b>Cookies</b> </a>
+			<a class="hyperlink" href="termOfUse.html" > <b>Terms of use</b></a>
+		</div>
+
+		<div class="cookiesWrapper hide">					<!-- Cookies window appear/disappear -->
+			<div class="cookiesTitle boldStyle">
+				Cookies Consent
+			</div>
+			<div class="cookiesText">
+				<p>This webiste is using cookies for the best navigation experience</p>
+			</div>
+				<div class="cookiesContainer">
+					<div class="cookiesButtons">				<!-- click the understand button to set Cookies -->
+						<button onclick="setCookie(getCookie())" class="cookiesChoice boldStyle">I understand </button>		
+					</div>
+						<a href="cookies.html" class="cookiesChoice hyperlink"> Learn More </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

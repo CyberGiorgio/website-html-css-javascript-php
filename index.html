@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>			
+		<title>A Slice of Plymouth History</title>							
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport visible area webpage -->
+		  <!-- fonts imported from google -->
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Roboto:ital@1&display=swap" rel="stylesheet">          
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!-- icons imported fontawesome -->
+		<link href="style.css" rel="stylesheet"/>	<!-- css file -->
+		<script src="javascript.js"></script>		<!-- javascript file -->
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	</head>
+	<body onload="checkCookie(getCookie()) ">		<!-- cookies checked at opening page -->
+		<div class="header">
+			<div class="title">
+				<a href="index.html" ><span class="italicStyle">"A Slice of Plymouth History"</span></a>
+			</div>
+			<div class="searchBoxWrapper">			<!-- Container Searchbox -->
+				<div class="searchBox">
+					<div class="searchContainer">
+						<form class="searchContainer" action="https://www.google.com/search" method="GET">
+						<input class="search" alt="search" name="q" type="text" placeholder="Google Search" >
+						<button class="searchIcon" type="submit" ><i class="icon-search "></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div  class="quote">"All great and honorable actions are accompanied with great difficulties, and must be both met and overcome with answerable courage" - William Bradford </div>
+		</div>
+		<div class="body">
+			<div class="row">
+				<div class="navigator">						<!-- Menu navigator -->
+					<div class="titleMenu boldStyle">Menu</div>
+					<div class="menuContent">
+						<ul class="menuList">
+							<li class="menuItem is-selected boldStyle">HomePage</li>
+							<li class="menuItem hyperlink"><a href="museum.html">Museums </a></li>
+							<li class="menuItem hyperlink"><a href="plymouthHoe.html">Plymouth Hoe</a></li>
+							<li class="menuItem hyperlink"><a href="theatre.html"> Theatre </a></li>
+							<li class="menuItem hyperlink"><a href="map.html">Map</a></li>
+							<li class="menuItem hyperlink"><a href="shopping.php">Shopping </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents index">			<!-- Main contents -->
+					<div class="titleContents boldStyle"> Welcome to Plymouth
+					</div>
+					<img  src=pictures\plymouth6.jpg alt="picture Of Plymouth" width="100%" height="100%">
+				</div>
+			</div>
+
+			<div class="row row--spaceBetween">					<!-- bottom contacts, social and info -->
+				<div class="contactWrapper">
+					<div class="titleMenuBottom boldStyle">Contacts:</div>
+					<div class="fullContactWrapper">
+						<div class="joinRow">	
+							<div class="typeContact boldStyle">Email:</div>
+							<div class="dataContatct">10787166@cityplym.ac.uk</div>
+						</div>
+						<div class="joinRow">	
+							<div class="typeContact boldStyle">Address:</div>
+							<div class="dataContatct">Drake Circus, Plymouth, PL4 88A</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact boldStyle">Company:</div>
+							<div class="dataContatct">University of Plymouth &#169;</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact hyperlink boldStyle"><a href="contactForm.html">Ask us a question <-</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="socialWrapper">
+					<div class="titleMenuBottom boldStyle">Social:</div>
+					<div class="fullContactWrapper">
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://instagram.com"><i class="icon-instagram"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://instagram.com">Instagram</a>
+							</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://facebook.com"> <i class="icon-facebook"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://facebook.com">Facebook</a>
+							</div>
+						</div>
+						<div class="joinRow">
+							<div class="typeContact">
+								<a class="hyperlink" href="https://twitter.com"><i class="icon-twitter"></i>
+							</div>
+								<div class="dataContact">
+								<a class="hyperlink" href="https://twitter.com">Twitter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">					<!-- footer links -->
+			<a class="hyperlink" href="sitemap.html" > <b>Sitemap</b> </a>
+			<a class="hyperlink" href="cookies.html" ><b>Cookies</b> </a>
+			<a class="hyperlink" href="termOfUse.html" > <b>Terms of use</b></a>
+		</div>
+
+		<div class="cookiesWrapper hide">					<!-- Cookies window appear/disappear -->
+			<div class="cookiesTitle boldStyle">
+				Cookies Consent
+			</div>
+			<div class="cookiesText">
+				<p>This webiste is using cookies for the best navigation experience</p>
+			</div>
+				<div class="cookiesContainer">
+					<div class="cookiesButtons">				<!-- click the understand button to set Cookies -->
+						<button onclick="setCookie(getCookie())" class="cookiesChoice boldStyle">I understand </button>		
+					</div>
+						<a href="cookies.html" class="cookiesChoice hyperlink"> Learn More </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
